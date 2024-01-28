@@ -1,4 +1,61 @@
 {% extends 'accounts/main.html' %}
 {% block content %}
-    <h6>Customer</h6>
+<div class="row mt-2">
+    <div class="col-md-4">
+        <div class="card text-center text-white mb-3">
+            <div class="card-header">
+                <h5 class="card title">Customers</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-sm btn-outline-primary w-100">Update Customer</button>
+                    </div>
+                    <div class="col-md-12 mt-1">
+                        <button class="btn btn-sm btn-outline-danger w-100">Delete Customer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card text-center text-white mb-3">
+            <div class="card-header">
+                <h5 class="card title">Contact Information</h5>
+            </div>
+            <div class="card-body">
+                <label>Email:</label>
+                <lable>Contact no:</lable>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center text-white mb-3" id="total-orders">
+            <div class="card-header">
+                <h5 class="card title">Total orders</h5>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"></h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <hr />
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Date ordered</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
 {% endblock %}
